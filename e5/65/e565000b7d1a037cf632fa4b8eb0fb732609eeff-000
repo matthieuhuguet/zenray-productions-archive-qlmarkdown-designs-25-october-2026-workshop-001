@@ -45,5 +45,8 @@ if (activate) {
   const file = ZRQL.DESIGNS[activate].file;
   execFileSync('defaults', ['write', QL_PREFS, 'customCSS', '-string', file]);
   execFileSync('defaults', ['write', QL_PREFS, 'customCSSOverride', '-bool', 'true']);
+  // 25 October 2026 : the running extension caches its settings ; restart it so Quick Look reads the new theme. / redémarrer l'extension.
+  try { execFileSync('pkill', ['-f', 'Markdown QL Extension']) } catch {}
+  execFileSync('qlmanage', ['-r'], { stdio: 'ignore' })
   console.log(`active QLMarkdown theme: ${execFileSync('defaults', ['read', QL_PREFS, 'customCSS']).toString().trim()}`);
 }
