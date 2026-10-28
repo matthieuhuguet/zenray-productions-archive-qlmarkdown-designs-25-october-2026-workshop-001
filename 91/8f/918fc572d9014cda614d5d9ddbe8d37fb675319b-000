@@ -1,13 +1,10 @@
 /* ZenRay-B-Papier.css : thème QLMarkdown ZenRay B (Papier éditorial), généré le 25 October 2026 par ThemeEngine.js.
    Modifier les valeurs dans la page index.html de l’atelier, puis Scripts/BuildThemes.mjs --install. */
-@font-face { font-family: "ZR Title"; font-style: italic; font-weight: 400; src: local("GTSectraLCG-RegularItalic"); }
-@font-face { font-family: "ZR Title"; font-style: normal; font-weight: 400; src: local("GTSectraLCG-Regular"); }
-@font-face { font-family: "ZR Title"; font-style: italic; font-weight: 400; src: local("AnthropicSerif-Regular"); unicode-range: U+0030-0039, U+0025, U+20AC, U+00A0, U+202F; }
-@font-face { font-family: "ZR Title"; font-style: normal; font-weight: 400; src: local("AnthropicSerif-Regular"); unicode-range: U+0030-0039, U+0025, U+20AC, U+00A0, U+202F; }
-@font-face { font-family: "ZR Body"; font-style: normal; font-weight: 400; src: local("AnthropicSerif-Regular"); }
-@font-face { font-family: "ZR Body"; font-style: italic; font-weight: 400; src: local("AnthropicSerif-Italic"); }
+@font-face { font-family: "ZR Title"; font-style: normal; font-weight: 400; src: local("GTUltra-Regular"); }
+@font-face { font-family: "ZR Body"; font-style: normal; font-weight: 400; src: local("Literata-Regular"); }
+@font-face { font-family: "ZR Body"; font-style: italic; font-weight: 400; src: local("Literata-Italic"); }
 @font-face { font-family: "ZR Mono"; font-style: normal; font-weight: 400; src: local("AnthropicMono-Regular"); }
-@font-face { font-family: "ZR UI"; font-style: normal; font-weight: 400; src: local("InterVariable"); }
+@font-face { font-family: "ZR UI"; font-style: normal; font-weight: 400; src: local("GTUltra-Regular"); }
 :root {
   --zr-bg: #FBFAF7; --zr-ink: #161514; --zr-muted: #76716A;
   --zr-accent: #8A2F22; --zr-rule: #E4E0D8; --zr-block: #F3F1EC;
@@ -21,9 +18,9 @@
   }
 }
 html, body { background: var(--zr-bg) !important; color: var(--zr-ink); margin: 0; }
-body { font-family: "ZR Body", "AnthropicSerif", Georgia, serif; font-weight: 400; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; font-variant-numeric: lining-nums; }
+body { font-family: "ZR Body", "Literata", Georgia, serif; font-weight: 400; font-size: 18px; line-height: 1.7; -webkit-font-smoothing: antialiased; font-variant-numeric: lining-nums; }
 .markdown-body { box-sizing: border-box; max-width: 68ch; margin: 0 auto; padding: 2em 2.2em 3em; }
-h1, h2, h3, h4, h5, h6 { font-family: "ZR Title", "GT Sectra LCG", Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -0.015em; line-height: 1.18; color: var(--zr-ink); margin: 1.5em 0 0.5em; }
+h1, h2, h3, h4, h5, h6 { font-family: "ZR Title", "GT Ultra", sans-serif; font-style: normal; font-weight: 400; letter-spacing: -0.015em; line-height: 1.18; color: var(--zr-ink); margin: 1.5em 0 0.5em; }
 h1 { font-size: 2.800em; margin-top: 0.4em; text-align: center; }
 h2 { font-size: 2.188em; }
 h3 { font-size: 1.709em; } h4 { font-size: 1.335em; color: var(--zr-muted); } h5 { font-size: 1.050em; } h6 { font-size: 1.000em; color: var(--zr-muted); }
@@ -40,7 +37,7 @@ pre code { background: none; padding: 0; font-size: 1em; }
 .hl.kwa, .hl.kwb { color: var(--zr-accent); } .hl.kwd { color: var(--zr-ink); font-weight: 700; } .hl.num, .hl.str, .hl.sng { color: color-mix(in srgb, var(--zr-accent) 70%, var(--zr-ink)); } .hl.slc, .hl.com { color: var(--zr-muted); font-style: italic; } .hl.opt { color: var(--zr-muted); }
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
 th, td { border-bottom: 1px solid var(--zr-rule); padding: 0.5em 0.8em; text-align: left; }
-th { font-family: "ZR UI", "Inter Variable", -apple-system, sans-serif; font-weight: 400; font-size: 0.78em; letter-spacing: 0.04em; text-transform: uppercase; color: var(--zr-muted); border-bottom: 1.5px solid var(--zr-ink); }
+th { font-family: "ZR UI", "GT Ultra", -apple-system, sans-serif; font-weight: 400; font-size: 0.78em; letter-spacing: 0.04em; text-transform: uppercase; color: var(--zr-muted); border-bottom: 1.5px solid var(--zr-ink); }
 hr { border: none; border-top: 1px solid var(--zr-rule); margin: 2.2em 0; }
 ul, ol { padding-left: 1.4em; } li { margin: 0.25em 0; } li::marker { color: var(--zr-accent); }
 li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.3em; }
